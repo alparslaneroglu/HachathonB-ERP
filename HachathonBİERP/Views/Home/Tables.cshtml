@@ -1,0 +1,26 @@
+﻿@using HachathonBİERP.Models
+@model IList<StandartDuruslar>
+@{
+    ViewData["Title"] = "Home Page";
+}
+   
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.)
+                {
+                    <tr>
+                        <th scope="row">@item.Baslangıc</th>
+                        <td>@item.Bitis</td>
+                        <td>@item.DurusNedeni</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
